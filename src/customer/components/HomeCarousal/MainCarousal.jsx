@@ -9,7 +9,7 @@ const items = MainCarosualData.map((item) => {
       src={item.Image}
       alt=""
       onClick={() => {}}
-      role="Presentation"
+      // role="Presentation"
       className="cursor-pointer"
       style={{
         width: "100%",
