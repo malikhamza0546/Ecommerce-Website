@@ -4,9 +4,6 @@ import {
   DialogBackdrop,
   DialogPanel,
   Popover,
-  PopoverButton,
-  PopoverGroup,
-  PopoverPanel,
   Tab,
   TabGroup,
   TabList,
@@ -23,7 +20,6 @@ import {
 import { deepPurple } from "@mui/material/colors";
 import { useNavigate } from "react-router-dom";
 import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
-import { ChevronDownIcon } from "@heroicons/react/20/solid";
 const navigation = {
   categories: [
     {
@@ -225,7 +221,7 @@ export default function Navigation() {
                             />
                           </div>
                           <a
-                            href={item.href}
+                            href={"https://www.example.com"}
                             className="mt-6 block font-medium text-gray-900"
                           >
                             <span
@@ -249,14 +245,14 @@ export default function Navigation() {
                           {section.name}
                         </p>
                         <ul
-                          role="list"
+                          // role="list"
                           aria-labelledby={`${category.id}-${section.id}-heading-mobile`}
                           className="mt-6 flex flex-col space-y-6"
                         >
                           {section.items.map((item) => (
                             <li key={item.name} className="flow-root">
                               <a
-                                href={item.href}
+                                href={"https://www.example.com"}
                                 className="-m-2 block p-2 text-gray-500"
                               >
                                 {item.name}
@@ -275,7 +271,7 @@ export default function Navigation() {
               {navigation.pages.map((page) => (
                 <div key={page.name} className="flow-root">
                   <a
-                    href={page.href}
+                    href={"https://www.example.com"}
                     className="-m-2 block p-2 font-medium text-gray-900"
                   >
                     {page.name}
@@ -287,7 +283,7 @@ export default function Navigation() {
             <div className="space-y-6 border-t border-gray-200 px-4 py-6">
               <div className="flow-root">
                 <a
-                  href="#"
+                  href="https://www.example.com"
                   className="-m-2 block p-2 font-medium text-gray-900"
                 >
                   Sign in
@@ -295,7 +291,7 @@ export default function Navigation() {
               </div>
               <div className="flow-root">
                 <a
-                  href="#"
+                  href="https://www.example.com"
                   className="-m-2 block p-2 font-medium text-gray-900"
                 >
                   Create account
@@ -362,7 +358,7 @@ export default function Navigation() {
 
               {/* Logo */}
               <div className="ml-4 flex lg:ml-0">
-                <a href="#">
+                <a href="https://www.example.com">
                   <span className="sr-only">Your Company</span>
                   <img
                     alt=""
@@ -412,7 +408,7 @@ export default function Navigation() {
                                           />
                                         </div>
                                         <a
-                                          href={item.href}
+                                          href={"https://www.example.com"}
                                           className="mt-6 block font-medium text-gray-900"
                                         >
                                           <span
@@ -437,7 +433,7 @@ export default function Navigation() {
                                           {section.name}
                                         </p>
                                         <ul
-                                          role="list"
+                                          // role="list"
                                           aria-labelledby={`${section.name}-heading`}
                                           className="mt-6 space-y-6 sm:mt-4 sm:space-y-4"
                                         >
@@ -489,14 +485,14 @@ export default function Navigation() {
               <div className="ml-auto flex items-center">
                 <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
                   <a
-                    href="#"
+                    href="https://www.example.com"
                     className="text-sm font-medium text-gray-700 hover:text-gray-800"
                   >
                     Sign in
                   </a>
                   <span aria-hidden="true" className="h-6 w-px bg-gray-200" />
                   <a
-                    href="#"
+                    href="https://www.example.com"
                     className="text-sm font-medium text-gray-700 hover:text-gray-800"
                   >
                     Create account
@@ -524,7 +520,7 @@ export default function Navigation() {
                         <div className="py-1">
                           <MenuItem>
                             <a
-                              href="#"
+                              href="https://www.example.com"
                               className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
                             >
                               Profile
@@ -537,7 +533,7 @@ export default function Navigation() {
                             }}
                           >
                             <a
-                              href="#"
+                              href="https://www.example.com"
                               className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
                             >
                               My Orders
@@ -546,7 +542,7 @@ export default function Navigation() {
 
                           <MenuItem>
                             <a
-                              href="#"
+                              href="https://www.example.com"
                               className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
                             >
                               Log Out
@@ -559,7 +555,7 @@ export default function Navigation() {
                 </div>
                 {/* Search */}
                 <div className="flex lg:ml-6">
-                  <a href="#" className="p-2 text-gray-400 hover:text-gray-500">
+                  <a href="https://www.example.com" className="p-2 text-gray-400 hover:text-gray-500">
                     <span className="sr-only">Search</span>
                     <MagnifyingGlassIcon
                       aria-hidden="true"
@@ -570,7 +566,7 @@ export default function Navigation() {
 
                 {/* Cart */}
                 <div className="ml-4 flow-root lg:ml-6">
-                  <a href="#" className="group -m-2 flex items-center p-2">
+                  <a href="https://www.example.com" className="group -m-2 flex items-center p-2">
                     <ShoppingBagIcon
                       aria-hidden="true"
                       className="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500"

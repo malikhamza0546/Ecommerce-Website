@@ -12,6 +12,7 @@ const CartItem = () => {
           <img
             className="w-full h-full object-cover object-top"
             src={mens_kurta[0].imageUrl}
+            alt=""
           />
         </div>
         <div className="ml-5 space-y-1">

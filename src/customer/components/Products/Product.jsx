@@ -21,7 +21,6 @@ import {
   PlusIcon,
   Squares2X2Icon,
 } from "@heroicons/react/20/solid";
-import color from "./FilterData";
 import { filters } from "./FilterData";
 import { singleFilter } from "./FilterData";
 import { sortOptions } from "./FilterData";

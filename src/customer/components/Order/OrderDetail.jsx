@@ -4,11 +4,9 @@ import { OrderTracker } from "./OrderTracker";
 import { Grid, Box } from "@mui/material";
 import { mens_kurta } from "../../Data/MensKurta/MensKurta";
 import { deepPurple } from "@mui/material/colors";
-import { StarBorder } from "@mui/icons-material";
 import StarBorderPurple500OutlinedIcon from "@mui/icons-material/StarBorderPurple500Outlined";
-import { useNavigate } from "react-router-dom";
 const OrderDetail = () => {
-  const navigate = useNavigate();
+ 
   return (
     <div className="px:5 lg:px-20">
       <div>

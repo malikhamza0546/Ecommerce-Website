@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 export const HomeSectionCard = ({ items }) => {
   return (
@@ -7,6 +7,7 @@ export const HomeSectionCard = ({ items }) => {
         <img
           className="object-cover object-top w-full h-full"
           src={items?.imageUrl}
+          alt=""
         />
       </div>
       <div className="p-4 flex flex-col items-start w-full">

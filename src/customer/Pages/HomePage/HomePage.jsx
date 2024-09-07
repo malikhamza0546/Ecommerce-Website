@@ -1,7 +1,5 @@
 import React from "react";
-import Footer from "../../components/Footer/Footer";
 import MainCarousal from "../../components/HomeCarousal/MainCarousal";
-import { HomeSectionCard } from "../../components/HomeSectionCard/HomeSectionCard";
 import { HomeSectionCarousal } from "../../components/HomeSectionCarousal/HomeSectionCarousal";
 const HomePage = () => {
   return (
